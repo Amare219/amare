@@ -1,0 +1,27 @@
+
+</html><!DOCTYPE html>
+<html>
+<head>
+<title>Replacing Elements</title>
+</head>
+<body>
+<div id="myContainer">
+<p>Old paragraph</p>
+</div>
+
+<script>
+// Create a new paragraph element
+const paragraph = document.createElement('p');
+
+// Add text content to the paragraph
+paragraph.textContent = 'Hello World!';
+
+// Replace the old paragraph with the new one
+const container = document.getElementById('myContainer');
+const oldParagraph = container.firstChild;
+container.replaceChild(paragraph, oldParagraph);
+</script>
+
+
+</body>
+</html>
